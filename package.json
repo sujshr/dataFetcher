@@ -1,0 +1,19 @@
+{
+  "name": "socialwebworker",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "hono": "^4.6.13",
+    "mongodb": "^6.11.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.19.2"
+  }
+}
