@@ -12,7 +12,7 @@ async function detectLanguage(inputText) {
     return detectedLanguage;
   } catch (error) {
     console.error("Language detection error:", error);
-    return "und"; 
+    return "und";
   }
 }
 
@@ -63,6 +63,7 @@ export default async function transferPosts() {
       }
 
       const newPost = {
+        originalPostId: post._id,
         user: post.user,
         post:
           translatedText === text
@@ -75,7 +76,7 @@ export default async function transferPosts() {
                 originalText: text,
                 imageUrl: imageUrl,
               },
-        fetched: false,
+        filtered: false,
         timestamps: post.timestamps,
       };
 
